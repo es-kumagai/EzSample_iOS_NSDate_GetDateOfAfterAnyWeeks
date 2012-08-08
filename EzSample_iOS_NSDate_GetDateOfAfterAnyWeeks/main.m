@@ -14,7 +14,14 @@ int main(int argc, char *argv[])
 	{
 		NSDate* today = [[NSDate alloc] init];
 		
-		NSLog(@"%@", today);
+		NSCalendar* calendar = [NSCalendar currentCalendar];
+		NSDateComponents* someWeeksComponent = [[NSDateComponents alloc] init];
+		
+		someWeeksComponent.week = 1;
+		
+		NSDate* result = [calendar dateByAddingComponents:someWeeksComponent toDate:today options:0];
+		
+		NSLog(@"%@", result);
 	}
 	
 	return 0;
