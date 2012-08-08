@@ -10,9 +10,7 @@
 		B1D220A115D14FFE00C8CFC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D220A015D14FFE00C8CFC0 /* UIKit.framework */; };
 		B1D220A315D14FFE00C8CFC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D220A215D14FFE00C8CFC0 /* Foundation.framework */; };
 		B1D220A515D14FFE00C8CFC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D220A415D14FFE00C8CFC0 /* CoreGraphics.framework */; };
-		B1D220AB15D14FFE00C8CFC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1D220A915D14FFE00C8CFC0 /* InfoPlist.strings */; };
 		B1D220AD15D14FFE00C8CFC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D220AC15D14FFE00C8CFC0 /* main.m */; };
-		B1D220B115D14FFE00C8CFC0 /* EzAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D220B015D14FFE00C8CFC0 /* EzAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +19,8 @@
 		B1D220A215D14FFE00C8CFC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B1D220A415D14FFE00C8CFC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B1D220A815D14FFE00C8CFC0 /* EzSample_iOS_NSDate_GetDateOfAfterAnyWeeks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EzSample_iOS_NSDate_GetDateOfAfterAnyWeeks-Info.plist"; sourceTree = "<group>"; };
-		B1D220AA15D14FFE00C8CFC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1D220AC15D14FFE00C8CFC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B1D220AE15D14FFE00C8CFC0 /* EzSample_iOS_NSDate_GetDateOfAfterAnyWeeks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EzSample_iOS_NSDate_GetDateOfAfterAnyWeeks-Prefix.pch"; sourceTree = "<group>"; };
-		B1D220AF15D14FFE00C8CFC0 /* EzAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EzAppDelegate.h; sourceTree = "<group>"; };
-		B1D220B015D14FFE00C8CFC0 /* EzAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EzAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +67,6 @@
 		B1D220A615D14FFE00C8CFC0 /* EzSample_iOS_NSDate_GetDateOfAfterAnyWeeks */ = {
 			isa = PBXGroup;
 			children = (
-				B1D220AF15D14FFE00C8CFC0 /* EzAppDelegate.h */,
-				B1D220B015D14FFE00C8CFC0 /* EzAppDelegate.m */,
 				B1D220A715D14FFE00C8CFC0 /* Supporting Files */,
 			);
 			path = EzSample_iOS_NSDate_GetDateOfAfterAnyWeeks;
@@ -83,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				B1D220A815D14FFE00C8CFC0 /* EzSample_iOS_NSDate_GetDateOfAfterAnyWeeks-Info.plist */,
-				B1D220A915D14FFE00C8CFC0 /* InfoPlist.strings */,
 				B1D220AC15D14FFE00C8CFC0 /* main.m */,
 				B1D220AE15D14FFE00C8CFC0 /* EzSample_iOS_NSDate_GetDateOfAfterAnyWeeks-Prefix.pch */,
 			);
@@ -116,7 +108,7 @@
 		B1D2209315D14FFE00C8CFC0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = Ez;
+				CLASSPREFIX = EzSample;
 				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "Tomohiro Kumagai";
 			};
@@ -142,7 +134,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1D220AB15D14FFE00C8CFC0 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,22 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1D220AD15D14FFE00C8CFC0 /* main.m in Sources */,
-				B1D220B115D14FFE00C8CFC0 /* EzAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B1D220A915D14FFE00C8CFC0 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B1D220AA15D14FFE00C8CFC0 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B1D220B215D14FFE00C8CFC0 /* Debug */ = {
@@ -262,6 +241,7 @@
 				B1D220B615D14FFE00C8CFC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

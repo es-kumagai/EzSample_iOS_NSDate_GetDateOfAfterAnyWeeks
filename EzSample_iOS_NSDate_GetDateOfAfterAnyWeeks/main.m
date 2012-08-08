@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-#import "EzAppDelegate.h"
-
 int main(int argc, char *argv[])
 {
-	@autoreleasepool {
-	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([EzAppDelegate class]));
+	@autoreleasepool
+	{
+		NSDate* today = [[NSDate alloc] init];
+		
+		NSLog(@"%@", today);
 	}
+	
+	return 0;
 }
